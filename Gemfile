@@ -3,6 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.0.0'
 
+gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 gem 'pg'
 gem 'activerecord-reset-pk-sequence'
 gem 'rack-cors'
